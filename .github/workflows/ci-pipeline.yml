@@ -19,8 +19,8 @@ jobs:
         with:
           node-version: 20
 
-      - name: Instalar dependencias
-        run: npm install
+      - name: Instalar dependencias limpias
+        run: npm ci || npm install
 
       - name: Ejecutar Pruebas Unitarias y de API con Cobertura (Quality Gate)
-        run: npm test
+        run: npx jest --coverage --forceExit
