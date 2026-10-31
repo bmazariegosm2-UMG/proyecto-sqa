@@ -1,0 +1,24 @@
+{
+  "name": "proyecto-sqa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+ "scripts": {
+    "start": "node src/server.js",
+    "lint": "npx eslint src/**/*.js",
+    "test": "jest --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "eslint": "*",
+    "jest": "*",
+    "supertest": "*"
+  },
+  "dependencies": {
+    "dotenv": "*",
+    "express": "*"
+  }
+}

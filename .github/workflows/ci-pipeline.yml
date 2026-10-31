@@ -1,0 +1,29 @@
+name: SQA Quality Gate Pipeline
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  quality-gate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar el código fuente
+        uses: actions/checkout@v3
+
+      - name: Configurar entorno Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Ejecutar Linter (Análisis Estático)
+        run: npm run lint --if-present
+
+      - name: Ejecutar Pruebas Unitarias y de API con Cobertura (Quality Gate)
+        run: npm test
