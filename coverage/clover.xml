@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1793332924790" clover="3.2.0">
-  <project timestamp="1793332924790" name="All files">
+<coverage generated="1793419576809" clover="3.2.0">
+  <project timestamp="1793419576809" name="All files">
     <metrics statements="75" coveredstatements="61" conditionals="54" coveredconditionals="45" methods="10" coveredmethods="7" elements="139" coveredelements="113" complexity="0" loc="75" ncloc="75" packages="1" files="2" classes="2"/>
     <file name="businessLogic.js" path="C:\Users\Usuario\Desktop\proyecto-sqa\src\businessLogic.js">
       <metrics statements="44" coveredstatements="41" conditionals="44" coveredconditionals="40" methods="5" coveredmethods="5"/>
