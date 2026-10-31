@@ -3,11 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
- "scripts": {
-    "start": "node src/server.js",
-    "lint": "npx eslint src/**/*.js",
-    "test": "jest --coverage"
-  },
+"scripts": {
+  "start": "node src/server.js",
+  "test": "jest --coverage --forceExit"
+}
   "keywords": [],
   "author": "",
   "license": "ISC",

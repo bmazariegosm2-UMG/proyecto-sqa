@@ -12,15 +12,15 @@ jobs:
 
     steps:
       - name: Descargar el código fuente
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Configurar entorno Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
 
       - name: Instalar dependencias
         run: npm install
 
       - name: Ejecutar Pruebas Unitarias y de API con Cobertura (Quality Gate)
-        run: npx jest --coverage
+        run: npm test
